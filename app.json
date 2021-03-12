@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/translate/translate",
+    "pages/history/history"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#1c1b21",
+    "navigationBarTitleText": "雪山翻译",
+    "navigationBarTitleStyle": "#fff",
+    "backgroundColor": "#333",
+    "backgroundTextStyle": "light"
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "position": "top",
+    "color": "#595959",
+    "selectedColor": "#1c1b21",
+    "list": [
+      {
+        "pagePath": "pages/translate/translate",
+        "text": "翻译"
+      },
+      {
+        "pagePath": "pages/history/history",
+        "text": "历史"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true,
+  "navigateToMiniProgramAppIdList": [
+    "wxe5f52902cf4de896"
+  ],
+  "sitemapLocation": "sitemap2.json"
+}
