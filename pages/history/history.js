@@ -19,7 +19,6 @@ Page({
       lang: e.currentTarget.dataset.lang,
       index: e.currentTarget.dataset.index
     }
-    console.log(app.globalData.curLang)
   }
 
 })

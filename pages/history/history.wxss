@@ -10,8 +10,10 @@
   font-size: 26rpx;
   color: #8995a1;
 }
+
 .item {
   margin-top: 40rpx;
+  border-bottom: 1px solid #ccc;
 }
 
 .item .query {
@@ -19,5 +21,5 @@
 }
 
 .item .result {
-  margin-top: 16rpx;
+  padding: 10rpx
 }

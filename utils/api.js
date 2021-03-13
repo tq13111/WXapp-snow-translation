@@ -7,6 +7,11 @@ function translate(q, { from = 'auto', to = 'auto' } = { from: 'auto', to: 'auto
   return new Promise((resolve, reject) => {
     let salt = Date.now()
     let sign = md5(`${appid}${q}${salt}${key}`)
+    wx.showLoading({
+      title: '加载中',
+      mask:true
+    })
+
     wx.request({
       url: 'https://fanyi-api.baidu.com/api/trans/vip/translate',
       data: {
@@ -18,6 +23,7 @@ function translate(q, { from = 'auto', to = 'auto' } = { from: 'auto', to: 'auto
         sign
       },
       success(res) {
+        wx.hideLoading()
         if (res.data && res.data.trans_result) {
           resolve(res.data)
         } else {
