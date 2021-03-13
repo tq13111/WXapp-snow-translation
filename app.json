@@ -1,6 +1,7 @@
 {
   "pages": [
-    "pages/translate/translate",
+    "pages/index/index",
+    "pages/change/change",
     "pages/history/history"
   ],
   "window": {
@@ -12,27 +13,23 @@
   },
   "tabBar": {
     "borderStyle": "white",
-    "position": "top",
+    "position": "bottom",
     "color": "#595959",
     "selectedColor": "#1c1b21",
     "list": [
       {
-        "pagePath": "pages/translate/translate",
-        "text": "翻译"
+        "pagePath": "pages/index/index",
+        "text": "翻译",
+        "iconPath": "./assets/icons/translate.png",
+        "selectedIconPath": "./assets/icons/translate-s.png"
       },
       {
         "pagePath": "pages/history/history",
-        "text": "历史"
+        "text": "历史",
+        "iconPath": "./assets/icons/record.png",
+        "selectedIconPath": "./assets/icons/record-s.png"
       }
     ]
   },
-  "networkTimeout": {
-    "request": 10000,
-    "downloadFile": 10000
-  },
-  "debug": true,
-  "navigateToMiniProgramAppIdList": [
-    "wxe5f52902cf4de896"
-  ],
-  "sitemapLocation": "sitemap2.json"
+  "sitemapLocation": "sitemap87.json"
 }
