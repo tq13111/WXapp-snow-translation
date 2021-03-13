@@ -1,6 +1,13 @@
-<!--logs.wxml-->
-<view class="container log-list">
-  <block wx:for="{{logs}}" wx:for-item="log">
-    <text class="log-item">{{index + 1}}. {{log}}</text>
-  </block>
-</view>
+<!--pages/history/history.wxml-->
+<scroll-view scroll-y class="container">
+  <view class="history-list">
+    <view class="title">翻译历史</view>
+    <view class="item" wx:for="{{list}}" wx:key="index" bindtap='onTapItem'
+     data-query="{{item.query}}"   data-chs="{{item.curLang.chs}}" data-lang="{{item.curLang.lang}}" data-index="{{item.curLang.index}}" data-langId="{{item.langIndex}}">
+      <view class="query">{{item.query}}</view>
+      <view class="result">{{item.result}}</view>
+    </view>
+  </view>
+</scroll-view>
+
+
